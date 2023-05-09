@@ -1,33 +1,25 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
-  const [active, setActive] = useState(true);
-
-  const handleClick = (mode) => {
-    if (mode === 0) setActive(true);
-    else setActive(false);
-  };
-
   return (
     <div className="nav" role="navigation">
       <h1>Generic Grocery Store</h1>
-      <Link to="">
-        <div
-          className={active ? "active" : null}
-          onClick={() => handleClick(0)}
-        >
-          Home
-        </div>
-      </Link>
-      <Link to="/shop">
-        <div
-          className={active ? null : "active"}
-          onClick={() => handleClick(1)}
-        >
-          Shop page
-        </div>
-      </Link>
+      <NavLink
+        to=""
+        className={({ isActive, isPending }) => {
+          return isActive ? "active" : "";
+        }}
+      >
+        <div className="navlink">Home</div>
+      </NavLink>
+      <NavLink
+        to="/shop"
+        className={({ isActive, isPending }) => {
+          return isActive ? "active" : "";
+        }}
+      >
+        <div className="navlink">Shop page</div>
+      </NavLink>
     </div>
   );
 };

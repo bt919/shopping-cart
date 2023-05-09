@@ -62,16 +62,25 @@ body {
 .nav div:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
+    border-radius: 8px;
 }
 
 .nav div:active {
     background-color: var(--sub-color);
     color: var(--bg-color);
+    border-radius: 8px;
 }
 
 .nav .active {
     background-color: var(--main-color);
     color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.active .navlink {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 8px;
 }
 
 a {
@@ -124,4 +133,134 @@ a {
 
 .prices > h3:first-child {
     text-decoration: line-through;
+}
+
+.shop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopHeader {
+    position: sticky;
+    top: 30px;
+    border: 5px solid var(--sub-color);
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: var(--bg-color);
+}
+
+.shopHeader button {
+    font-weight: bold;
+    margin-left: auto;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--sub-alt-color);
+    color: var(--text-color);
+}
+
+.shopHeader button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.shopHeader button:active {
+    background-color: var(--sub-color);
+    color: var(--bg-color);
+}
+
+.nav .active {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.shopItems {
+    margin-top: 20px;
+    border: 5px solid var(--sub-color);
+    width: max(850px, 80%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 250px;
+    grid-auto-rows: 250px;
+    grid-auto-columns: 300px;
+    align-items: center;
+    border-radius: 10px;
+    gap: 30px;
+    padding: 20px;
+}
+
+.shopItem {
+    border: 3px solid var(--main-color);
+    width: 300px;
+    height: 210px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopItem img {
+    height: 100px;
+    width: auto;
+}
+
+.pictureDescription {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.purchaseMenu {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--sub-color);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.purchaseMenu button {
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--sub-alt-color);
+    color: var(--text-color);
+}
+
+.purchaseMenu button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.purchaseMenu button:active {
+    background-color: var(--sub-color);
+    color: var(--bg-color);
+}
+
+.purchaseMenu button:last-child {
+    margin-left: auto;
+}
+
+.purchaseMenu button:not(.purchaseMenu button:last-child) {
+    font-size: 16px;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchaseMenu p {
+    margin: 0px 3px 0px 3px;
 }
