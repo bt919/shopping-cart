@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.d02c565a.css",
+    "main.js": "/shopping-cart/static/js/main.1763c861.js",
+    "static/media/chicken.png": "/shopping-cart/static/media/chicken.d5bf61909b6db149d527.png",
+    "static/media/Roboto-Regular.ttf": "/shopping-cart/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "index.html": "/shopping-cart/index.html",
+    "main.d02c565a.css.map": "/shopping-cart/static/css/main.d02c565a.css.map",
+    "main.1763c861.js.map": "/shopping-cart/static/js/main.1763c861.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d02c565a.css",
+    "static/js/main.1763c861.js"
+  ]
+}
