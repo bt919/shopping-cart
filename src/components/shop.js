@@ -27,9 +27,6 @@ const Shop = () => {
         <ShopItem onAddClick={addToCartHandler}></ShopItem>
         <ShopItem onAddClick={addToCartHandler}></ShopItem>
         <ShopItem onAddClick={addToCartHandler}></ShopItem>
-        <ShopItem onAddClick={addToCartHandler}></ShopItem>
-        <ShopItem onAddClick={addToCartHandler}></ShopItem>
-        <ShopItem onAddClick={addToCartHandler}></ShopItem>
       </div>
     </div>
   );
